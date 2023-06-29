@@ -4,6 +4,7 @@ import wave from "./assets/wave.svg"
 import mobile from "./assets/mobile.png"
 import tick from "./assets/tickbox.png"
 import form from "./assets/form.png"
+import Todo from './todo'
 
 const HomePage = () => {
   return (
@@ -70,7 +71,8 @@ card for your finances- within minutes! </p>
       />
 </div>
 </div>
-     
+
+     <Todo/>
     </div>
   )
 }
