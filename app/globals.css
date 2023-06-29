@@ -210,6 +210,9 @@ font-weight: 700;
 
 
  /* Todo css */
+ .title{
+  text-align: center;
+ }
  .main-div {
   min-height: 100vh;
   background: linear-gradient(
@@ -298,6 +301,11 @@ input:focus {
   color: rgb(47, 214, 122);
 }
 
+.tick{
+  background: transparent;
+  right: 1;
+}
+
 .fa-plus:before {
   content: "\f067";
   font-size: 1.5rem;
@@ -309,7 +317,7 @@ input:focus {
 }
 
 .eachItem {
-  background: #fff;
+
   padding: 1.2rem 1rem;
   border-radius: 0.5rem;
   margin-bottom: 0.7rem;

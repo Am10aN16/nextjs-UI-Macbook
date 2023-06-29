@@ -6,6 +6,7 @@ const Todo = () => {
   const [inputData, setInputData] = useState();
   const [items, setItems] = useState([]);
   const [filteredList, setFilteredList] = new useState(items);
+  const [bgColor, setBgColor] = useState('#fff');
 
   const addItem = () => {
     if (!inputData) {
@@ -24,15 +25,12 @@ const Todo = () => {
 
     setItems(updatedItems);
   };
-  const deleteSItem = (id) => {
-    const updatedItems = filteredList.filter((elem, index) => {
-      return index !== id;
-    });
 
-    setFilteredList(updatedItems);
-  };
-
-
+  const TaskDone =()=>{
+    let gray = '#808080';
+    setBgColor(gray);
+    console.log("click");
+  }
 
 
   const removeAll = () => {
@@ -61,6 +59,7 @@ const Todo = () => {
   return (
     <>
      <div className='main-div'>
+        <h1 className="title">ToDo List</h1>
         <div className='child-div'>
         <input type="text" placeholder="Search Here" onChange={filterBySearch} />
         <div className='showItems'>
@@ -96,8 +95,9 @@ const Todo = () => {
           <div className='showItems'>
             {items.map((elem, index) => {
               return (
-                <div className='eachItem' key={index}>
+                <div className='eachItem' key={index} style={{background: bgColor}}>
                   <h3>{elem}</h3>
+                  <i className=" fa fa-check tick" onClick={TaskDone}></i>
                   <i
                     className='far fa-trash-alt add-btn'
                     title='Delete Item'
