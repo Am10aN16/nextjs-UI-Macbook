@@ -210,9 +210,11 @@ font-weight: 700;
 
 
  /* Todo css */
- .title{
-  text-align: center;
- }
+.title{
+  font-size: 2rem;
+  font-family: 'Poppins';
+ font-weight: 800;
+}
  .main-div {
   min-height: 100vh;
   background: linear-gradient(
@@ -222,8 +224,9 @@ font-weight: 700;
     rgba(252, 176, 69, 1) 100%
   );
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .child-div {
@@ -303,7 +306,7 @@ input:focus {
 
 .tick{
   background: transparent;
-  right: 1;
+  margin-left: 6rem;
 }
 
 .fa-plus:before {

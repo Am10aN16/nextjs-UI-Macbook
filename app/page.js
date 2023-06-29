@@ -8,6 +8,7 @@ import Todo from './todo'
 
 const HomePage = () => {
   return (
+    // Top section of page
     <div className='main'>
       <div className="top">
         <h1>Check your financial health</h1>
@@ -19,7 +20,7 @@ card for your finances- within minutes! </p>
       </div>
 
      
-
+{/* //middle left section  */}
 <div className="middle">
 <div className="left_part">
           <div className="row">
@@ -31,13 +32,16 @@ card for your finances- within minutes! </p>
               <p>Identify Mistakes</p>
           </div>
       </div>
+
+      {/* //mobile image at center */}
 <Image 
         src={mobile}
         alt="Picture of the wave"
         width={400}
         height={650}
       />
-
+     
+     {/* //middle right section  */}
 <div className="right_part">
           <div className="row">
               <Image src={tick} width={25}/>
@@ -71,7 +75,7 @@ card for your finances- within minutes! </p>
       />
 </div>
 </div>
-
+{/* //called todo component which renders the TodoList  */}
      <Todo/>
     </div>
   )
